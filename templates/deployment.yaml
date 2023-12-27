@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+  labels: {{ include "common.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels: {{ include "common.labels" . | nindent 6 }}
+  template:
+    metadata:
+      labels: {{ include "common.labels" . | nindent 8 }}
+    spec:
+      imagePullSecrets:
+      - name: harbor-registry-secret
+      containers:
+      - name: {{ .Release.Name }}
+        image: {{ .Values.image.name }}
+        ports:
+        - containerPort: {{ .Values.image.port }}
