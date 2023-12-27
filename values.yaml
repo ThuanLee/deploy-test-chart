@@ -4,6 +4,7 @@ image:
   # name: thuanlee215/tecommerce:backend
   name: dev-harbor.savis.vn/tts/tecommerce:backend
   port: 8000
+  pullPolicy: Always
 
 service:
   port: 8000

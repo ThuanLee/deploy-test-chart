@@ -16,5 +16,6 @@ spec:
       containers:
       - name: {{ .Release.Name }}
         image: {{ .Values.image.name }}
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - containerPort: {{ .Values.image.port }}
