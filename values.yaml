@@ -1,7 +1,7 @@
 replicaCount: 3
 image:
   # name: thuanlee215/tecommerce:backend
-  name: dev-harbor.savis.vn/tts/tecommerce:backend
+  name: dev-harbor.savis.vn/tts/test:dev.0e34d21a
   port: 8000
   pullPolicy: Always
 service:
