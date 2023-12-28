@@ -3,12 +3,12 @@ entries:
   deploy-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-12-27T23:08:47.297495874+07:00"
+    created: "2023-12-28T11:47:12.445842111+07:00"
     description: A Helm chart for Kubernetes
-    digest: a7acf440e8486bc837f7317084dd51e21648bbbf34b462b57fb33e345e56a34e
+    digest: 514c12921795ca397d59d9bc1acc872d8755205a034ad5d9f6dffedea8640302
     name: deploy-test
     type: application
     urls:
     - packages/deploy-test-0.1.0.tgz
     version: 0.1.0
-generated: "2023-12-27T23:08:47.297174742+07:00"
+generated: "2023-12-28T11:47:12.445505406+07:00"
